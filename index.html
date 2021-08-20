@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Jonathan Hill's Website</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1>Jonathan Hill</h1>
+						<p>Software engineer looking for work.</p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">Who I Am</a></li>
+							<li><a href="#kinographist">Kinographist</a></li>
+							<li><a href="#viewfinder">ViewFinder</a></li>
+							<li><a href="#pathmaker">Path-Maker</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Who I Am</h2>
+										</header>
+										<p>Hey. My name is Jonathan Hill, and I'm a software developer, comfortable with JS/React and high-level interpreted languages like Ruby (w/ Rails) and Python,
+											and familiar with some low-level / object-oriented compiled languages like C/C++ and Java. I was a math major in college who
+											studied a lot of stuff outside the course curricula, and I love learning new concepts and bringing them to bear on 
+											interesting problems. Doing that is what motivates me to wake up every day and get stuff done. As part of my training I 
+											implemented a basic film cataloguing site and a graph paper app. I know how to work hard and I pick up new concepts 
+											fairly quickly. On my own time, I listen to a lot of jazz, read 19th-century novels, and love to go on day trips on 
+											my bike when I can schedule it.</p>
+									</div>
+								</div>
+								<div class="content">
+									<div class="col-12">
+										<h2>Skills</h2>
+										<ul>
+											<li>JavaScript</li>
+											<li>React</li>
+											<li>Python</li>
+											<li>Ruby</li>
+											<li>Ruby on Rails</li> 
+											<li>SQL</li>
+											<li>HTML/CSS</li>
+											<li>C/C++</li>
+											<li>Java</li>
+											<li>Matlab</li>
+										</ul>
+									</div>
+								</div>
+							</section>
+
+						<!-- First Section -->
+							<section id="kinographist" class="main special">
+								<header class="major">
+									<a href="https://kinographist.herokuapp.com"><h2>Kinographist</h2></a>
+									<p>Film cataloguing site featuring social integration</p>
+								</header>
+								<div class="box">
+									<div class="col-12"><span class="image fit"><img src="images/kinographist_full_page.png" alt=""/></span></div>
+								</div>
+								<div class="row">
+									<div class="col-6 col-12-medium">
+										<h3>Features</h3>
+										<ul>
+											<li>Browse and filter a curated selection of films</li>
+											<li>Rate and review films</li>
+											<li>Add and remove films to lists so you can find them later</li>
+											<li>Like various kinds of content: films, reviews, lists</li>
+										</ul>
+									</div>
+									<div class="col-6 col-12-medium">
+										<h3>Behind the Scenes</h3>
+										<ul>
+											<li>Created model-level interface that converts user-chosen parameters into chained ActiveRecord queries</li>
+											<li>Parsed and simplified data from external API in order to perform backend search queries</li>
+											<li>Implemented polymorphic database types to enable users to like several types of content, including films, reviews, and lists</li>
+											<li>Specified custom scopes to create preloadable associations that enabled large amounts of data to be processed in a single backend request</li>
+											<li>Delegated to ActiveStorage in order to keep track of images associated with film records on AWS</li>
+										</ul>
+									</div>
+								</div>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="https://kinographist.herokuapp.com" class="button">Public Link</a></li>
+										<li><a href="https://github.com/kerapace/kinographist" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+									</ul>
+								</footer>
+							</section>
+
+							<section id="viewfinder" class="main special">
+								<header class="major">
+									<a href="https://viewfinder1.herokuapp.com"><h2>ViewFinder</h2></a>
+									<p>Simple photo-upload app with Mapbox integration</p>
+								</header>
+								<div class="box">
+									<div class="col-12"><span class="image fit"><img src="images/viewfinder_full_page.jpg" alt=""/></span></div>
+								</div>
+								<div class="row">
+									<div class="col-6 col-12-medium">
+										<h3>Features</h3>
+										<ul>
+											<li>Browse galleries of photos taken in the San Francisco Bay Area</li>
+											<li>Create locations and upload your own photos in batches</li>
+											<li>Comment on locations to add your own guidance</li>
+											<li>Quick link to Google Maps for directions</li>
+										</ul>
+									</div>
+									<div class="col-6 col-12-medium">
+										<h3>Behind the Scenes</h3>
+										<ul>
+											<li>Employed Mapbox with React wrapper to quickly produce dynamic map content with custom styling</li>
+											<li>Worked with multipart/form-data HTTP requests and Multer middleware to allow user to dynamically upload several pictures at once while creating a location</li>
+											<li>Implemented backend routes that dynamically create and populate associated records over multiple tables on upload and access</li>
+										</ul>
+									</div>
+								</div>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="https://viewfinder1.herokuapp.com" class="button">Public Link</a></li>
+										<li><a href="https://github.com/david-ross1/ViewFinder" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+									</ul>
+								</footer>
+							</section>
+							<section id="pathmaker" class="main special">
+								<header class="major">
+									<a href="kerapace.github.io/path-maker/"><h2>Path-Maker</h2></a>
+									<p>Simple mapmaking app for OSR-style tabletop games</p>
+								</header>
+								<div class="box">
+									<div class="col-12"><span class="image fit"><img src="images/path-maker_full_page.png" alt=""/></span></div>
+								</div>
+								<div class="row">
+									<div class="col-6 col-12-medium">
+										<h3>Features</h3>
+										<ul>
+											<li>Edit a pannable sheet of graph paper</li>
+											<li>Draw lines, arcs, and freehand shapes with snap-to-grid functionality</li>
+											<li>Export and import map files as JSON</li>
+										</ul>
+									</div>
+									<div class="col-6 col-12-medium">
+										<h3>Behind the Scenes</h3>
+										<ul>
+											<li>Employed 2D Canvas API to create pannable interactive map with toggleable snap-to-grid functionality</li>
+											<li>Parsed and simplified data from external API in order to perform backend search queries</li>
+											<li>Used Proxy object to intercept calls to localStorage to allow for free download of associated data</li>
+											<li>Enabled user to upload stored map data via input HTML and FileReader objects</li>
+										</ul>
+									</div>
+								</div>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="https://kerapace.github.io/path-maker/" class="button">Public Link</a></li>
+										<li><a href="https://github.com/kerapace/path-maker" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+									</ul>
+								</footer>
+							</section>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>How to contact me</h2>
+							<dl class="alt">
+								<dt>Phone</dt>
+								<dd>(203) 648-6976</dd>
+								<dt>Email</dt>
+								<dd><a href="mailto:jonathan.hill.35822@gmail.com">jonathan.hill.35822@gmail.com</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="https://twitter.com/kerapace" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="https://github.com/kerapace" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/jonathan-hill-229408216/" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">Site content by Jonathan Hill. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
